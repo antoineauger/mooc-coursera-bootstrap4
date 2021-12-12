@@ -9,7 +9,15 @@ $(document).ready(function(){
         else if ($("#carousel-button").children("span").hasClass('fa-play')){
             $("#mycarousel").carousel('cycle');
             $("#carousel-button").children("span").removeClass('fa-play');
-            $("#carousel-button").children("span").addClass('fa-pause');                    
+            $("#carousel-button").children("span").addClass('fa-pause');
         }
+    });
+
+    $("#buttonLogin").click(function(){
+        $('#loginModal').modal('show');
+    });
+
+    $("#buttonReservation").click(function(){
+        $('#reservationFormModal').modal('show');
     });
 });
